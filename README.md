@@ -1,6 +1,6 @@
 # boxmuller
 
-Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform) in Golang
+Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform) in Golang.
 
 ## Install
 ``` go get github.com/takatoh/boxmuller```
@@ -20,5 +20,5 @@ Create a BoxMuller struct.
 ### Rand()
 Returns 2 values.
 
-## Licence
+## License
 MIT
