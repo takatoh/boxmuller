@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-//	"os"
+	"os"
 	"flag"
 	"strconv"
 
@@ -10,6 +10,14 @@ import (
 )
 
 func main() {
+	flag.Usage = func() {
+		fmt.Fprintf(os.Stderr,
+`Usage:
+  %s [options] <N>
+Options:
+`, os.Args[0])
+		flag.PrintDefaults()
+	}
 	opt_mean := flag.Float64("mean", 0.0, "specify mean value.")
 	opt_variance := flag.Float64("variance", 1.0, "specify variance.")
 	flag.Parse()
