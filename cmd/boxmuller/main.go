@@ -22,7 +22,13 @@ Options:
 	opt_variance := flag.Float64("variance", 1.0, "specify variance.")
 	flag.Parse()
 
-	n, _ := strconv.Atoi(flag.Args()[0])
+	n, err := strconv.Atoi(flag.Args()[0])
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "N must be integer.")
+		flag.Usage()
+		os.Exit(1)
+	}
+
 	m := n / 2
 
 	bm := boxmuller.NewBoxMuller(*opt_mean, *opt_variance)
