@@ -18,7 +18,7 @@ Options:
 `, os.Args[0])
 		flag.PrintDefaults()
 	}
-	opt_mean := flag.Float64("mean", 0.0, "specify mean value.")
+	opt_mu := flag.Float64("mu", 0.0, "specify mean value.")
 	opt_variance := flag.Float64("variance", 1.0, "specify variance.")
 	flag.Parse()
 
@@ -31,7 +31,7 @@ Options:
 
 	m := n / 2
 
-	bm := boxmuller.NewBoxMuller(*opt_mean, *opt_variance)
+	bm := boxmuller.NewBoxMuller(*opt_mu, *opt_variance)
 	for i := 0; i < m; i++ {
 		z1, z2 := bm.Rand()
 		fmt.Println(z1)
