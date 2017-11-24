@@ -6,15 +6,15 @@ Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80
 ``` go get github.com/takatoh/boxmuller```
 
 ## Usage
-
 ```go
 
-bm := boxmuller.NewBoxMuller(mean, variance)
+bm := boxmuller.NewBoxMuller(mu, sigma)
 z1, z2 := bm.Rand()
 
 ```
+
 ## API
-### NewBoxMuller(mean, variance)
+### NewBoxMuller(mu, sigma)
 Create a BoxMuller struct.
 
 ### Rand()
