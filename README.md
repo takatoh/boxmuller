@@ -17,8 +17,8 @@ z1, z2 := bm.Rand()
 ### New(mu, sigma)
 Create a BoxMuller struct.
 
-### Rand()
+### (bm *BoxMuller) Rand()
 Returns 2 values.
 
 ## License
-MIT
+MIT License
