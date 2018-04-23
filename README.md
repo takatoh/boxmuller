@@ -8,13 +8,13 @@ Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80
 ## Usage
 ```go
 
-bm := boxmuller.NewBoxMuller(mu, sigma)
+bm := boxmuller.New(mu, sigma)
 z1, z2 := bm.Rand()
 
 ```
 
 ## API
-### NewBoxMuller(mu, sigma)
+### New(mu, sigma)
 Create a BoxMuller struct.
 
 ### Rand()

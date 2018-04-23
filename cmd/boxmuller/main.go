@@ -31,7 +31,7 @@ Options:
 
 	m := n / 2
 
-	bm := boxmuller.NewBoxMuller(*opt_mu, *opt_sigma)
+	bm := boxmuller.New(*opt_mu, *opt_sigma)
 	for i := 0; i < m; i++ {
 		z1, z2 := bm.Rand()
 		fmt.Println(z1)

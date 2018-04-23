@@ -12,7 +12,7 @@ type BoxMuller struct {
 	sigma float64
 }
 
-func NewBoxMuller(mu, sigma float64) *BoxMuller {
+func New(mu, sigma float64) *BoxMuller {
 	p := new(BoxMuller)
 	p.r = rand.New(rand.NewSource(time.Now().UnixNano()))
 	p.mu = mu
