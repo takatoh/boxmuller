@@ -22,8 +22,8 @@ func New(mu, sigma float64) *BoxMuller {
 
 func (bm *BoxMuller) Rand() (float64, float64) {
 	x := bm.r.Float64()
-	y := bm.r.Float64()	
-	z1 := math.Sqrt(-2.0 * math.Log(x)) * math.Cos(2.0 * math.Pi * y)
-	z2 := math.Sqrt(-2.0 * math.Log(x)) * math.Sin(2.0 * math.Pi * y)
-	return bm.sigma * z1 + bm.mu, bm.sigma * z2 + bm.mu
+	y := bm.r.Float64()
+	z1 := math.Sqrt(-2.0*math.Log(x)) * math.Cos(2.0*math.Pi*y)
+	z2 := math.Sqrt(-2.0*math.Log(x)) * math.Sin(2.0*math.Pi*y)
+	return bm.sigma*z1 + bm.mu, bm.sigma*z2 + bm.mu
 }
