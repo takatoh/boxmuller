@@ -4,7 +4,11 @@ Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80
 
 ## Install
 
-    $ go get github.com/takatoh/boxmuller
+Add the following line to your `go.mod` file.
+
+```
+require github.com/takatoh/boxmuller v1.0.0
+```
 
 ## Usage
 
