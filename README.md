@@ -7,7 +7,7 @@ Implementation of [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80
 Add the following line to your `go.mod` file.
 
 ```
-require github.com/takatoh/boxmuller v1.0.0
+require github.com/takatoh/boxmuller v1.1.0
 ```
 
 ## Usage
